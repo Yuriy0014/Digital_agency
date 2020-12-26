@@ -4,12 +4,28 @@
 
 html {
 	box-sizing: border-box;
+	outline: none;
 }
 
 *,
 *::after,
 *::before {
 	box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+button {
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
 }
 
 .body {
@@ -29,4 +45,15 @@ html {
 		justify-content: space-between;
 		text-align: center;
 	}
+}
+
+.logo__link {
+	margin-left: 8px;
+}
+
+.menu__btn {
+	width: 40px;
+	height: 40px;
+	border-radius: 3px;
+	background-color: #fff;
 }
