@@ -1,0 +1,32 @@
+@import 'vars';
+@import 'fonts';
+
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+.body {
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+.container {
+	padding: 0 20px;
+}
+
+.header {
+	background-color: $accent;
+	&__inner {
+		min-height: 80px;
+		display: flex;
+		justify-content: space-between;
+		text-align: center;
+	}
+}
