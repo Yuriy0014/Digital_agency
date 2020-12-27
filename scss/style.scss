@@ -43,6 +43,12 @@ li {
 	}
 }
 
+@media (min-width: 768px) {
+	.container {
+		padding: 0 40px;
+	}
+}
+
 .header {
 	background-color: $accent;
 
@@ -69,6 +75,12 @@ li {
 @media (min-width: 640px) {
 	.logo__link-img {
 		margin: 17px;
+	}
+}
+
+@media (min-width: 768px) {
+	.logo__link-img {
+		margin-left: 0px;
 	}
 }
 
