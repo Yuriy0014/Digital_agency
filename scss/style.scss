@@ -4,13 +4,13 @@
 
 html {
 	box-sizing: border-box;
-	outline: none;
 }
 
 *,
 *::after,
 *::before {
 	box-sizing: inherit;
+	outline: none;
 }
 
 a {
@@ -52,8 +52,21 @@ li {
 }
 
 .menu__btn {
+	margin-top: 20px;
 	width: 40px;
 	height: 40px;
 	border-radius: 3px;
 	background-color: #fff;
+	position: relative;
+	&::after {
+		content: "";
+		width: 13px;
+		height: 2px;
+		border-radius: 1px;
+		background-color: $accent;
+		position: absolute;
+		top: 15px;
+		left: 14px;
+		box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+	}
 }
