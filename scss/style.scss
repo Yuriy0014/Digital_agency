@@ -49,6 +49,14 @@ li {
 	}
 }
 
+
+@media (min-width: 1024px) { 
+	.container {
+		max-width: 1200px; // Для экранов размера > 1024 и < 1440 делаем тут красоту (1360 например)
+		margin: 0 auto;
+	}
+}
+
 .header {
 	background-color: $accent;
 
