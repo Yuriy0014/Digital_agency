@@ -11,6 +11,10 @@ html {
   outline: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -136,4 +140,16 @@ li {
   background-size: cover;
   background-position: center center;
   min-height: 193px;
+}
+
+.top-slider {
+  background: rgba(33, 33, 33, 0.5);
+}
+
+.top-slider__item {
+  color: #fff;
+}
+
+.top-slider__title {
+  text-align: center;
 }
