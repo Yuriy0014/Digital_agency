@@ -1,3 +1,5 @@
 Sources/
 scss/dist
 .vscode
+css/fonts.css
+css/vars.css
