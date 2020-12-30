@@ -13,7 +13,12 @@ html {
 	outline: none;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	margin: 0;
 }
 
@@ -154,10 +159,18 @@ li {
 
 .top-slider {
 	background: rgba(33, 33, 33, 0.5);
-	&__item { 
+
+	&__item {
 		color: #fff;
-	}
-	&__title {
 		text-align: center;
+	}
+
+	&__title {
+		font-family: 'RobotoCondensed-Regular';
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 28px;
+		text-transform: uppercase;
+		padding: 36px 0 28px;
 	}
 }

@@ -13,10 +13,10 @@
 }
 
 @font-face {
-  font-family: 'RobotoCondensed-Medium';
+  font-family: 'RobotoCondensed-Regular';
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/RobotoCondensed-Medium.woff2") format("woff2"), url("../fonts/RobotoCondensed-Medium.woff") format("woff");
+  src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -53,7 +53,12 @@ html {
   outline: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -194,8 +199,14 @@ li {
 
 .top-slider__item {
   color: #fff;
+  text-align: center;
 }
 
 .top-slider__title {
-  text-align: center;
+  font-family: 'RobotoCondensed-Regular';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 28px;
+  text-transform: uppercase;
+  padding: 36px 0 28px;
 }
