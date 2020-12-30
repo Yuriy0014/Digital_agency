@@ -215,6 +215,19 @@ li {
   padding: 36px 0 28px;
   max-width: 243px;
   margin: 0 auto;
+  position: relative;
+}
+
+.top-slider__title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 61px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: #4A4A4A;
 }
 
 .top-slider .slick-dots {
