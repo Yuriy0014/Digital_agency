@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 	$('.top-slider').slick({
 		dots: true,
 		infinite: false,
@@ -11,15 +11,9 @@ $(function() {
 				}
 			},
 			{
-				breakpoint: 600,
+				breakpoint: 640,
 				settings: {
-
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-
+					arrows: false
 				}
 			}
 		]
