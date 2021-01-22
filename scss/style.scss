@@ -194,6 +194,9 @@ li {
 			background-color: $text-color;
 		}
 	}
+	&__btn {
+		display: none;
+	}
 
 	.slick-dots {
 		display: flex;
@@ -232,6 +235,16 @@ li {
 			padding: 50px 0 15px;
 			margin: 0 auto 30px;
 			max-width: 522px;
+		}
+		&__btn {
+			display: block;
+			margin: 0 auto 113px;
+			color: $bg-color;
+			font-size: 18px;
+			line-height: 18px;
+			background: $accent;
+			border-radius: 3px;
+			padding: 16px 45px;
 		}
 	}
 }

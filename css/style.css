@@ -236,6 +236,10 @@ li {
   background-color: #4A4A4A;
 }
 
+.top-slider__btn {
+  display: none;
+}
+
 .top-slider .slick-dots {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,5 +277,15 @@ li {
     padding: 50px 0 15px;
     margin: 0 auto 30px;
     max-width: 522px;
+  }
+  .top-slider__btn {
+    display: block;
+    margin: 0 auto 113px;
+    color: #f9f6e5;
+    font-size: 18px;
+    line-height: 18px;
+    background: #2B4074;
+    border-radius: 3px;
+    padding: 16px 45px;
   }
 }
