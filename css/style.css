@@ -82,7 +82,7 @@ li {
 .body {
   min-width: 320px;
   overflow-x: hidden;
-  font-family: 'Roboto-Regular', 'Aria', 'san-serif';
+  font-family: "Roboto-Regular", "Aria", "san-serif";
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -196,6 +196,12 @@ li {
   min-height: 193px;
 }
 
+@media (min-width: 640px) {
+  .head {
+    min-height: 386px;
+  }
+}
+
 .top-slider {
   background: rgba(33, 33, 33, 0.5);
 }
@@ -207,7 +213,7 @@ li {
 }
 
 .top-slider__title {
-  font-family: 'RobotoCondensed-Regular';
+  font-family: "RobotoCondensed-Regular";
   font-weight: 400;
   font-size: 28px;
   line-height: 28px;
@@ -245,7 +251,7 @@ li {
 
 .top-slider .slick-dots .slick-active button {
   background-color: transparent;
-  border: 1px solid #476E4D;
+  border: 1px solid #476e4d;
 }
 
 .top-slider .slick-dots button {
@@ -255,4 +261,17 @@ li {
   width: 10px;
   border-radius: 50%;
   margin: 0 10px;
+}
+
+@media (min-width: 640px) {
+  .top-slider__item {
+    min-height: 386px;
+  }
+  .top-slider__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 50px 0 15px;
+    margin: 0 auto 30px;
+    max-width: 522px;
+  }
 }

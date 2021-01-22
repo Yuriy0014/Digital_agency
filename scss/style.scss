@@ -1,6 +1,5 @@
-@import 'vars';
-@import 'fonts';
-
+@import "vars";
+@import "fonts";
 
 html {
 	box-sizing: border-box;
@@ -26,7 +25,6 @@ a {
 	text-decoration: none;
 }
 
-
 button {
 	border: none;
 	padding: 0;
@@ -43,7 +41,7 @@ li {
 .body {
 	min-width: 320px;
 	overflow-x: hidden;
-	font-family: 'Roboto-Regular', 'Aria', 'san-serif';
+	font-family: "Roboto-Regular", "Aria", "san-serif";
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18px;
@@ -147,17 +145,21 @@ li {
 }
 
 //=======================
-//=======================
 //Slider
 //=======================
-//=======================4
 
 .head {
-	background-image: url('../images/bg-head.jpg');
+	background-image: url("../images/bg-head.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	min-height: 193px;
+}
+
+@media (min-width: 640px) {
+	.head {
+		min-height: 386px;
+	}
 }
 
 .top-slider {
@@ -170,7 +172,7 @@ li {
 	}
 
 	&__title {
-		font-family: 'RobotoCondensed-Regular';
+		font-family: "RobotoCondensed-Regular";
 		font-weight: 400;
 		font-size: 28px;
 		line-height: 28px;
@@ -204,7 +206,7 @@ li {
 		.slick-active {
 			button {
 				background-color: transparent;
-				border: 1px solid #476E4D;
+				border: 1px solid #476e4d;
 			}
 		}
 
@@ -215,6 +217,21 @@ li {
 			width: 10px;
 			border-radius: 50%;
 			margin: 0 10px;
+		}
+	}
+}
+
+@media (min-width: 640px) {
+	.top-slider {
+		&__item {
+			min-height: 386px;
+		}
+		&__title {
+			font-size: 60px;
+			line-height: 60px;
+			padding: 50px 0 15px;
+			margin: 0 auto 30px;
+			max-width: 522px;
 		}
 	}
 }
