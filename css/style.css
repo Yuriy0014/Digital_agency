@@ -240,6 +240,10 @@ p {
   background-color: #4A4A4A;
 }
 
+.top-slider__text {
+  display: none;
+}
+
 .top-slider__btn {
   display: none;
 }
@@ -330,5 +334,21 @@ p {
   }
   .top-slider__item {
     min-height: 465px;
+  }
+  .top-slider__text {
+    display: block;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-slider__item {
+    min-height: 625px;
+  }
+  .top-slider__title {
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    max-width: 760px;
+    margin-top: 101px;
   }
 }

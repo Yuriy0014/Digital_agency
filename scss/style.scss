@@ -39,7 +39,7 @@ li {
 }
 
 p {
-	margin:0;
+	margin: 0;
 }
 
 .body {
@@ -198,6 +198,9 @@ p {
 			background-color: $text-color;
 		}
 	}
+	&__text{
+		display: none;
+	}
 	&__btn {
 		display: none;
 	}
@@ -261,11 +264,11 @@ p {
 			right: 0;
 			z-index: 5;
 		}
-		.slick-prev{
+		.slick-prev {
 			background-color: $accent;
 			top: calc(50% - 56px);
 		}
-		.slick-next{
+		.slick-next {
 			background-color: $bg-color;
 			bottom: calc(50% - 56px);
 		}
@@ -290,6 +293,24 @@ p {
 		}
 		&__item {
 			min-height: 465px;
+		}
+		&__text{
+			display: block;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.top-slider {
+		&__item {
+			min-height: 625px;
+		}
+		&__title {
+			font-size: 84px;
+			line-height: 84px;
+			letter-spacing: 2px;
+			max-width: 760px;
+			margin-top: 101px;
 		}
 	}
 }
