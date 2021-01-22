@@ -281,11 +281,30 @@ li {
   .top-slider__btn {
     display: block;
     margin: 0 auto 113px;
-    color: #f9f6e5;
+    color: #F9F6E5;
     font-size: 18px;
     line-height: 18px;
     background: #2B4074;
     border-radius: 3px;
     padding: 16px 45px;
+  }
+  .top-slider .slick-dots {
+    bottom: 50px;
+  }
+  .top-slider .slick-arrow {
+    width: 56px;
+    height: 56px;
+    border: none;
+    position: absolute;
+    right: 0;
+    z-index: 5;
+  }
+  .top-slider .slick-prev {
+    background-color: #2B4074;
+    top: calc(50% - 56px);
+  }
+  .top-slider .slick-next {
+    background-color: #F9F6E5;
+    bottom: calc(50% - 56px);
   }
 }

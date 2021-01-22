@@ -249,5 +249,21 @@ li {
 		.slick-dots {
 			bottom: 50px;
 		}
+		.slick-arrow {
+			width: 56px;
+			height: 56px;
+			border: none;
+			position: absolute;
+			right: 0;
+			z-index: 5;
+		}
+		.slick-prev{
+			background-color: $accent;
+			top: calc(50% - 56px);
+		}
+		.slick-next{
+			background-color: $bg-color;
+			bottom: calc(50% - 56px);
+		}
 	}
 }
