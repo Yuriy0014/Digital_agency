@@ -79,6 +79,10 @@ li {
   list-style: none;
 }
 
+p {
+  margin: 0;
+}
+
 .body {
   min-width: 320px;
   overflow-x: hidden;
@@ -306,5 +310,25 @@ li {
   .top-slider .slick-next {
     background-color: #F9F6E5;
     bottom: calc(50% - 56px);
+  }
+}
+
+@media (min-width: 768px) {
+  .top-slider__title {
+    padding: 87px 0 0;
+  }
+  .top-slider__title::after {
+    display: none;
+  }
+  .top-slider__text {
+    margin: 30px auto;
+    font-family: "RobotoCondensed-Regular";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 587px;
+  }
+  .top-slider__item {
+    min-height: 465px;
   }
 }
