@@ -352,3 +352,21 @@ p {
     margin-top: 101px;
   }
 }
+
+@media (min-width: 1440px) {
+  .top-slider__item {
+    min-height: 668px;
+  }
+  .top-slider__title {
+    font-size: 96px;
+    line-height: 96px;
+    letter-spacing: 2px;
+    max-width: 865px;
+    margin-top: 107px;
+  }
+  .top-slider__text {
+    font-size: 24px;
+    line-height: 26px;
+    max-width: 885px;
+  }
+}

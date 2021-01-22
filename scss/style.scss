@@ -198,7 +198,7 @@ p {
 			background-color: $text-color;
 		}
 	}
-	&__text{
+	&__text {
 		display: none;
 	}
 	&__btn {
@@ -294,7 +294,7 @@ p {
 		&__item {
 			min-height: 465px;
 		}
-		&__text{
+		&__text {
 			display: block;
 		}
 	}
@@ -311,6 +311,26 @@ p {
 			letter-spacing: 2px;
 			max-width: 760px;
 			margin-top: 101px;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.top-slider {
+		&__item {
+			min-height: 668px;
+		}
+		&__title {
+			font-size: 96px;
+			line-height: 96px;
+			letter-spacing: 2px;
+			max-width: 865px;
+			margin-top: 107px;
+		}
+		&__text {
+			font-size: 24px;
+			line-height: 26px;
+			max-width: 885px;
 		}
 	}
 }
