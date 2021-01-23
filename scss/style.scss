@@ -355,4 +355,19 @@
 .services {
 	padding: 25px 0 40px;
 	text-align: center;
+	&__title {
+		margin-bottom: 47px;
+	}
+	&__descr {
+		font-size: 20px;
+		line-height: 24px;
+		color: $text-color;
+		margin-bottom: 21px;
+	}
+	&__text {
+		font-size: 15px;
+		line-height: 17px;
+		color: #797979;
+		margin-bottom: 40px;
+	}
 }

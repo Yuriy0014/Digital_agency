@@ -81,3 +81,24 @@ p {
 		max-width: 1320px;
 	}
 }
+
+.title {
+	font-size: 24px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	@extend %robotocondensed-400;
+	position: relative;
+	padding-bottom: 28px;
+	color: $accent;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 50px;
+		height: 8px;
+		background-color: $accent;
+		bottom: 0;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+	}
+}

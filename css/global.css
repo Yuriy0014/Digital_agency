@@ -1,3 +1,8 @@
+.title {
+  font-family: 'RobotoCondensed-Regular';
+  font-weight: 400;
+}
+
 @font-face {
   font-family: 'Roboto-Regular';
   font-weight: 400;
@@ -121,4 +126,25 @@ p {
   .container {
     max-width: 1320px;
   }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 28px;
+  color: #2B4074;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  background-color: #2B4074;
+  bottom: 0;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
 }
