@@ -370,4 +370,31 @@
 		color: #797979;
 		margin-bottom: 40px;
 	}
+	&__item {
+		min-height: 310px;
+		border: 1px solid $bg-color;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		border-bottom: none;
+		&:last-child {
+			border-bottom: 1px solid $bg-re;
+		}
+	}
+	&__item-img {
+		margin-bottom: 30px;
+	}
+	&__item-title {
+		font-size: 16px;
+		line-height: 19px;
+		letter-spacing: 2px;
+		color: $text-color;
+		@extend %robotocondensed-700;
+	}
+	&__item-text {
+		display: none;
+	}
+	&__item-link {
+		display: none;
+	}
 }
