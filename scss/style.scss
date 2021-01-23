@@ -378,14 +378,23 @@ p {
 			align-items: center;
 		}
 		&__box {
-			max-width: 427px;
+			max-width: 477px;
 		}
 		&__text{
 			margin: 0;
 			max-width: 340px;
 		}
 		&__btn {
-			margin: 0 0 auto;
+			margin: 0 0 0 auto;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.call {
+		&__text{
+			margin: 0;
+			max-width: 477px;
 		}
 	}
 }
