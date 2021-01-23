@@ -148,3 +148,10 @@ p {
   left: 0;
   right: 0;
 }
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
+}

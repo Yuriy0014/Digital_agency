@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .call__text {
   font-family: 'Dosis-Light';
   font-weight: 300;
@@ -234,6 +235,13 @@ p {
   margin: 0 auto;
   left: 0;
   right: 0;
+}
+
+@media (min-width: 640px) {
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+  }
 }
 
 .header {
@@ -594,6 +602,7 @@ p {
 
 .services__title {
   margin-bottom: 47px;
+  color: #2B4074;
 }
 
 .services__descr {
@@ -673,4 +682,76 @@ p {
   line-height: 19px;
   letter-spacing: 2px;
   color: #2B4074;
+}
+
+@media (min-width: 640px) {
+  .services {
+    padding: 25px 0;
+  }
+  .services__title {
+    margin-bottom: 20px;
+    padding-bottom: 0;
+  }
+  .services__title::after {
+    display: none;
+  }
+  .services__descr {
+    font-size: 24px;
+    padding-bottom: 38px;
+    margin-bottom: 31px;
+    position: relative;
+  }
+  .services__descr::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: #2B4074;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .services__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .services__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0 -40px;
+    /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
+  }
+  .services__item {
+    width: 50%;
+  }
+  .services__item:last-child {
+    border-bottom: none;
+  }
+  .services__item:nth-of-type(2n) {
+    border-left: none;
+  }
+  .services__item-img {
+    margin-bottom: 30px;
+  }
+  .services__item-title {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #4A4A4A;
+  }
+  .services__item-text {
+    display: none;
+    margin-bottom: 20px;
+    color: #9B9B9B;
+  }
+  .services__item-link {
+    display: none;
+    line-height: 19px;
+    letter-spacing: 2px;
+    color: #2B4074;
+  }
 }
