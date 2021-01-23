@@ -380,7 +380,7 @@ p {
 		&__box {
 			max-width: 477px;
 		}
-		&__text{
+		&__text {
 			margin: 0;
 			max-width: 340px;
 		}
@@ -392,9 +392,40 @@ p {
 
 @media (min-width: 1024px) {
 	.call {
-		&__text{
+		&__text {
 			margin: 0;
 			max-width: 477px;
+		}
+	}
+}
+
+@media (min-width: 1440px) {
+	.top-slider {
+		.slick-arrow {
+			width: 70px;
+			height: 70px;
+		}
+		.slick-prev {
+			top: calc(50% - 70px);
+			img {
+				position: relative;
+				left: 5%;
+			}
+		}
+		.slick-next {
+			bottom: calc(50% - 70px);
+			img {
+				position: relative;
+				right: 5%;
+			}
+		}
+	}
+	.call {
+		&__text {
+			max-width: 536px;
+		}
+		&__inner {
+			padding: 0 50px;
 		}
 	}
 }

@@ -454,3 +454,30 @@ p {
     max-width: 477px;
   }
 }
+
+@media (min-width: 1440px) {
+  .top-slider .slick-arrow {
+    width: 70px;
+    height: 70px;
+  }
+  .top-slider .slick-prev {
+    top: calc(50% - 70px);
+  }
+  .top-slider .slick-prev img {
+    position: relative;
+    left: 5%;
+  }
+  .top-slider .slick-next {
+    bottom: calc(50% - 70px);
+  }
+  .top-slider .slick-next img {
+    position: relative;
+    right: 5%;
+  }
+  .call__text {
+    max-width: 536px;
+  }
+  .call__inner {
+    padding: 0 50px;
+  }
+}
