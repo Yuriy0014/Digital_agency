@@ -334,3 +334,37 @@ p {
 		}
 	}
 }
+
+.call {
+	background-color: $accent;
+	padding: 40px 0;
+	color: #fff;
+	text-align: center;
+	&__title {
+		@extend %roboto-500;
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 10px;
+	}
+	&__text {
+		@extend %dosis-300;
+		font-size: 16px;
+		line-height: 18px;
+		margin-bottom: 52px;
+	}
+	&__btn {
+		background: $bg-color;
+		color: $accent;
+		@extend %roboto-500;
+		font-size: 18px;
+		line-height: 18px;
+		border-radius: 3px;
+		display: flex;
+		width: 200px;
+		height: 50px;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+}

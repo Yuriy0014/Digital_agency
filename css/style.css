@@ -1,3 +1,13 @@
+.call__text {
+  font-family: 'Dosis-Light';
+  font-weight: 300;
+}
+
+.call__title, .call__btn {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+}
+
 @font-face {
   font-family: 'Roboto-Regular';
   font-weight: 400;
@@ -369,4 +379,44 @@ p {
     line-height: 26px;
     max-width: 885px;
   }
+}
+
+.call {
+  background-color: #2B4074;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+
+.call__title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+.call__text {
+  font-size: 16px;
+  line-height: 18px;
+  margin-bottom: 52px;
+}
+
+.call__btn {
+  background: #F9F6E5;
+  color: #2B4074;
+  font-size: 18px;
+  line-height: 18px;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  text-transform: uppercase;
 }
