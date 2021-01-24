@@ -428,7 +428,7 @@
 
 @media (min-width: 640px) {
 	.services {
-		padding: 25px 0;
+		padding: 25px 0 0;
 		&__title {
 			margin-bottom: 20px;
 			padding-bottom: 0;
@@ -444,7 +444,7 @@
 			&::after {
 				content: "";
 				position: absolute;
-				width: 50px;
+				width: 100px;
 				height: 8px;
 				background-color: $accent;
 				bottom: 0;
@@ -474,3 +474,35 @@
 	}
 }
 
+@media (min-width: 768px) {
+	.services {
+		padding: 50px 0 0;
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__descr {
+			text-align: left;
+			&::after {
+				margin-left: 0;
+			}
+		}
+		&__text {
+			text-align: left;
+			margin-bottom: 27px;
+		}
+		&__item {
+			min-height: 334px;
+			padding: 0 108px;
+			&:hover {
+				padding: 0 18px;
+				.services__item-inner {
+					padding: 40px 60px 5px;
+					min-height: 288px;
+				}
+			}
+		}
+		&__items {
+			margin: 0 -40px; /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
+		}
+	}
+}
