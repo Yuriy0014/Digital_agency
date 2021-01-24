@@ -655,8 +655,8 @@ p {
 
 .services__item:hover .services__item-inner {
   border: 4px solid #2B4074;
-  margin: 18px 0;
-  padding: 40px 20px 5px;
+  margin: 15px 0 12px;
+  padding: 36px 20px 30px;
   min-height: 277px;
 }
 
@@ -726,6 +726,7 @@ p {
     /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
   }
   .services__item {
+    min-height: 320px;
     width: 50%;
   }
   .services__item:last-child {
@@ -763,6 +764,40 @@ p {
   .services__item:hover .services__item-inner {
     padding: 40px 60px 5px;
     min-height: 288px;
+  }
+  .services__items {
+    margin: 0 -40px;
+    /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
+  }
+}
+
+@media (min-width: 1024px) {
+  .services__title {
+    margin-bottom: 60px;
+  }
+  .services__descr {
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+  .services__text {
+    margin-bottom: 32px;
+    max-width: 571px;
+  }
+  .services__item {
+    min-height: 290px;
+    width: 25%;
+    padding: 0 20px;
+  }
+  .services__item:hover {
+    padding: 0 18px;
+  }
+  .services__item:hover .services__item-inner {
+    padding: 21px 9px 20px;
+    min-height: 255px;
+    margin: 10px 0;
+  }
+  .services__item:nth-of-type(n) {
+    border-left: none;
   }
   .services__items {
     margin: 0 -40px;
