@@ -804,3 +804,48 @@ p {
     /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
   }
 }
+
+@media (min-width: 1440px) {
+  .services {
+    padding: 0;
+  }
+  .services__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .services__title {
+    margin-bottom: 60px;
+  }
+  .services__descr {
+    line-height: 26px;
+    margin-bottom: 40px;
+  }
+  .services__text {
+    margin-bottom: 32px;
+    max-width: 571px;
+  }
+  .services__item {
+    min-height: 290px;
+    width: 25%;
+    padding: 0 20px;
+  }
+  .services__item:hover {
+    padding: 0 18px;
+  }
+  .services__item:hover .services__item-inner {
+    padding: 21px 9px 20px;
+    min-height: 255px;
+    margin: 10px 0;
+  }
+  .services__item:nth-of-type(n) {
+    border-left: none;
+  }
+  .services__items {
+    margin: 0 -40px;
+    /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
+  }
+}

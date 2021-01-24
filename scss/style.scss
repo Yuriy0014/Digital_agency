@@ -545,3 +545,46 @@
 		}
 	}
 }
+
+@media (min-width: 1440px) {
+	.services {
+		padding: 0;
+		&__inner{
+			display: flex;
+			justify-content: space-between;
+		}
+		&__title {
+			margin-bottom: 60px;
+		}
+		&__descr {
+			line-height: 26px;
+			margin-bottom: 40px;
+		}
+		&__text {
+			margin-bottom: 32px;
+			max-width: 571px;
+		}
+		&__item {
+			min-height: 290px;
+			width: 25%;
+			padding: 0 20px;
+			&:hover {
+				padding: 0 18px;
+				.services__item {
+					// min-height: 262px;
+				}
+				.services__item-inner {
+					padding: 21px 9px 20px;
+					min-height: 255px;
+					margin: 10px 0;
+				}
+			}
+			&:nth-of-type(n) {
+				border-left: none;
+			}
+		}
+		&__items {
+			margin: 0 -40px; /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
+		}
+	}
+}
