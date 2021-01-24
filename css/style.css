@@ -722,7 +722,7 @@ p {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 0 -40px;
+    margin: 0 -30px;
     /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
   }
   .services__item {
@@ -733,25 +733,5 @@ p {
   }
   .services__item:nth-of-type(2n) {
     border-left: none;
-  }
-  .services__item-img {
-    margin-bottom: 30px;
-  }
-  .services__item-title {
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 2px;
-    color: #4A4A4A;
-  }
-  .services__item-text {
-    display: none;
-    margin-bottom: 20px;
-    color: #9B9B9B;
-  }
-  .services__item-link {
-    display: none;
-    line-height: 19px;
-    letter-spacing: 2px;
-    color: #2B4074;
   }
 }
