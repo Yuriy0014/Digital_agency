@@ -597,7 +597,7 @@
 }
 
 .project {
-	padding: 20px 0 40px;
+	padding: 20px 0;
 	background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
 	text-align: center;
 	&__title {
@@ -610,6 +610,9 @@
 	&__item-img {
 		border-radius: 4px;
 		min-height: 250px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
 		padding: 12px 14px;
 		&:hover {
 			.project__item-inner {
@@ -640,6 +643,33 @@
 	}
 }
 
+@media (min-width: 640px) { 
+	.project {
+		padding: 40px 0 20px;
+		&__title {
+			&::after {
+				background-color: #fff;
+			}
+		}
+		&__item-img {
+			margin: 0 30px;
+			border-radius: 4px;
+			min-height: 460px;
+			padding: 21px 24px;
+		}
+		&__item-inner {
+			min-height: 417px;
+		}
+		&__item-info {
+			margin-right: 13px;
+		}
+		&__item-link {
+			font-size: 20px;
+			line-height: 23px;
+		}
+	}
+}
+
 .team {
 	text-align: center;
 	padding: 20px 0 40px;
@@ -664,4 +694,8 @@
 		padding: 21px 26px;
 		color: $bg-color;
 	}
+}
+
+@media (min-width: 640px) { 
+
 }

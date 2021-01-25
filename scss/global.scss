@@ -106,5 +106,8 @@ p {
 	.title {
 		font-size: 48px;
 		line-height: 56px;
+		&::after {
+			width: 100px;
+		}
 	}
 }
