@@ -612,7 +612,7 @@
 		min-height: 250px;
 		padding: 12px 14px;
 		&:hover {
-			.project__item-inner{
+			.project__item-inner {
 				opacity: 1;
 			}
 		}
@@ -627,7 +627,7 @@
 		opacity: 0;
 		transition: all 0.5s;
 	}
-	&__item-info{
+	&__item-info {
 		margin-right: 13px;
 	}
 	&__item-link {
@@ -637,5 +637,31 @@
 		letter-spacing: 2px;
 		color: $accent;
 		@extend %robotocondensed-700;
+	}
+}
+
+.team {
+	text-align: center;
+	padding: 20px 0 40px;
+	&__images {
+		width: 100%;
+		margin-bottom: 40px;
+	}
+	&__title {
+		color: $text-color;
+		margin-bottom: 23px;
+	}
+	&__text {
+		margin-bottom: 84px;
+		text-align: center;
+		color: $default-color;
+	}
+	&__btn {
+		border: none;
+		background-color: $accent;
+		text-transform: uppercase;
+		border-radius: 3px;
+		padding: 21px 26px;
+		color: $bg-color;
 	}
 }

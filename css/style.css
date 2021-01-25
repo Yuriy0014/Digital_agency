@@ -926,3 +926,33 @@ p {
   letter-spacing: 2px;
   color: #2B4074;
 }
+
+.team {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+
+.team__images {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.team__title {
+  color: #4A4A4A;
+  margin-bottom: 23px;
+}
+
+.team__text {
+  margin-bottom: 84px;
+  text-align: center;
+  color: #9B9B9B;
+}
+
+.team__btn {
+  border: none;
+  background-color: #2B4074;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 21px 26px;
+  color: #F9F6E5;
+}
