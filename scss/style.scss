@@ -772,3 +772,35 @@
 		}
 	}
 }
+
+@media (min-width: 768px) {
+	.team {
+		text-align-last: left;
+		padding: 40px 0 48px;
+		&__inner {
+			display: flex;
+		}
+		&__images {
+			width: 240px;
+			height: 100%;
+			margin-bottom: 0px;
+			margin-right: 34px;
+		}
+		&__title {
+			margin-bottom: 7px;
+			font-size: 36px;
+			line-height: 38px;
+			padding-bottom: 28px;
+			&::after {
+				margin-left: 0;
+			}
+		}
+		&__text {
+			font-style: 18px;
+			margin: 0 0 30px;
+		}
+		&__btn {
+			font-size: 18px;
+		}
+	}
+}
