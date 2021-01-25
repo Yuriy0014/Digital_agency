@@ -595,3 +595,47 @@
 		}
 	}
 }
+
+.project {
+	padding: 20px 0 40px;
+	background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+	text-align: center;
+	&__title {
+		color: #fff;
+		margin-bottom: 40px;
+		&::after {
+			background-color: #fff;
+		}
+	}
+	&__item-img {
+		border-radius: 4px;
+		min-height: 250px;
+		padding: 12px 14px;
+		&:hover {
+			.project__item-inner{
+				opacity: 1;
+			}
+		}
+	}
+	&__item-inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba($bg-color, 0.83);
+		border-radius: 4px;
+		min-height: 227px;
+		opacity: 0;
+		transition: all 0.5s;
+	}
+	&__item-info{
+		margin-right: 13px;
+	}
+	&__item-link {
+		display: block;
+		padding: 20px 0;
+		line-height: 19px;
+		letter-spacing: 2px;
+		color: $accent;
+		@extend %robotocondensed-700;
+	}
+}
