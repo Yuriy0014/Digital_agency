@@ -386,6 +386,9 @@
 			.services__item-text,
 			.services__item-link {
 				display: block;
+				opacity: 1;
+				height: auto;
+				overflow: visible;
 			}
 			.services__item-img {
 				margin-bottom: 14px;
@@ -411,14 +414,22 @@
 		color: $text-color;
 		@extend %robotocondensed-700;
 	}
+	&__item-inner {
+		transition: all 0.3s;
+	}
+	&__item-text,
+	&__item-link {
+		transition: all 0.6s;
+		opacity: 0;
+		height: 0;
+		overflow: hidden; /* Два предыдущих свойства скрыли элементы, но кликнуть по ним еще можно было и возникал cursor:pointer; теперь всё норм */
+	}
 	&__item-text {
-		display: none;
 		@extend %dosis-500;
 		margin-bottom: 20px;
 		color: $default-color;
 	}
 	&__item-link {
-		display: none;
 		line-height: 19px;
 		letter-spacing: 2px;
 		@extend %robotocondensed-700;

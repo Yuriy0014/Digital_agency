@@ -643,6 +643,9 @@ p {
 .services__item:hover .services__item-text,
 .services__item:hover .services__item-link {
   display: block;
+  opacity: 1;
+  height: auto;
+  overflow: visible;
 }
 
 .services__item:hover .services__item-img {
@@ -671,14 +674,28 @@ p {
   color: #4A4A4A;
 }
 
+.services__item-inner {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.services__item-text, .services__item-link {
+  -webkit-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  /* Два предыдущих свойства скрыли элементы, но кликнуть по ним еще можно было и возникал cursor:pointer; теперь всё норм */
+}
+
 .services__item-text {
-  display: none;
   margin-bottom: 20px;
   color: #9B9B9B;
 }
 
 .services__item-link {
-  display: none;
   line-height: 19px;
   letter-spacing: 2px;
   color: #2B4074;
