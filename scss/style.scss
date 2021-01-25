@@ -704,13 +704,26 @@
 	}
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 1024px) { 
 	.project {
 		&__items {
 			justify-content: center;
 		}
 		&__item-img {
 			margin: 0 12px;
+		}
+	}
+}
+
+@media (min-width: 1440px) { 
+	.project {
+		&__items {
+			flex-wrap: nowrap;
+			justify-content: space-between;
+		}
+		&__item-img {
+			margin: 0;
+			min-width: 300px;
 		}
 	}
 }

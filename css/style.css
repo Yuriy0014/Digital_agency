@@ -995,7 +995,7 @@ p {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .project__items {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -1003,6 +1003,20 @@ p {
   }
   .project__item-img {
     margin: 0 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .project__items {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .project__item-img {
+    margin: 0;
+    min-width: 300px;
   }
 }
 
