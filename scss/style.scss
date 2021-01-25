@@ -527,9 +527,6 @@
 			padding: 0 20px;
 			&:hover {
 				padding: 0 18px;
-				.services__item {
-					// min-height: 262px;
-				}
 				.services__item-inner {
 					padding: 21px 9px 20px;
 					min-height: 255px;
@@ -549,42 +546,41 @@
 @media (min-width: 1440px) {
 	.services {
 		padding: 0;
-		&__inner{
+		&__inner {
 			display: flex;
 			justify-content: space-between;
+			margin: 0 -100px 0 -50px;
+		}
+		&__head {
+			max-width: 350px;
+			margin-right: 100px;
 		}
 		&__title {
-			margin-bottom: 60px;
+			margin: 90px 0 70px;
+			text-align: left;
 		}
 		&__descr {
-			line-height: 26px;
-			margin-bottom: 40px;
+			padding-bottom: 30px;
+			margin-bottom: 35px;
 		}
-		&__text {
-			margin-bottom: 32px;
-			max-width: 571px;
+		&__items {
+			margin: 0;
 		}
 		&__item {
-			min-height: 290px;
-			width: 25%;
-			padding: 0 20px;
+			width: 230px;
+			padding: 0 5px;
 			&:hover {
 				padding: 0 18px;
-				.services__item {
-					// min-height: 262px;
-				}
 				.services__item-inner {
-					padding: 21px 9px 20px;
+					padding: 10px 3px 5px;
 					min-height: 255px;
-					margin: 10px 0;
+					margin: 5px 0;
 				}
 			}
 			&:nth-of-type(n) {
-				border-left: none;
+				border-left: 1px solid #f9f6e5;
+				border-right: none;
 			}
-		}
-		&__items {
-			margin: 0 -40px; /*Прижали к краям, как это сделано на макете. Скролл не появится т.к. overflow-x: hidden; */
 		}
 	}
 }
