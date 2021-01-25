@@ -995,6 +995,17 @@ p {
   }
 }
 
+@media (min-width: 768px) {
+  .project__items {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .project__item-img {
+    margin: 0 12px;
+  }
+}
+
 .team {
   text-align: center;
   padding: 20px 0 40px;

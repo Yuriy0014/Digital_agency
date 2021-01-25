@@ -704,6 +704,17 @@
 	}
 }
 
+@media (min-width: 768px) { 
+	.project {
+		&__items {
+			justify-content: center;
+		}
+		&__item-img {
+			margin: 0 12px;
+		}
+	}
+}
+
 .team {
 	text-align: center;
 	padding: 20px 0 40px;
