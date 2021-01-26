@@ -734,6 +734,7 @@
 	&__images {
 		width: 100%;
 		margin-bottom: 40px;
+		border-radius: 4px;
 	}
 	&__title {
 		color: $text-color;
@@ -775,7 +776,7 @@
 
 @media (min-width: 768px) {
 	.team {
-		text-align-last: left;
+		text-align: left;
 		padding: 40px 0 48px;
 		&__inner {
 			display: flex;
@@ -799,6 +800,28 @@
 			font-size: 18px;
 			margin: 0 0 30px;
 			text-align: left;
+		}
+		&__btn {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+	.team {
+		padding: 80px 0;
+
+		&__images {
+			width: 395px;
+			margin-right: 60px;
+		}
+		&__title {
+			margin-top: 10px;
+			margin-bottom: 19px;
+		}
+		&__text {
+			line-height: 24px;
+			margin: 0 0 20px;
 		}
 		&__btn {
 			font-size: 18px;
