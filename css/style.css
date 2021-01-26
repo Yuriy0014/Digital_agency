@@ -1095,8 +1095,9 @@ p {
     margin-left: 0;
   }
   .team__text {
-    font-style: 18px;
+    font-size: 18px;
     margin: 0 0 30px;
+    text-align: left;
   }
   .team__btn {
     font-size: 18px;
