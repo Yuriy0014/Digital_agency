@@ -828,3 +828,21 @@
 		}
 	}
 }
+
+@media (min-width: 1440px) {
+	.team {
+		padding: 50px 0 110px;
+
+		&__images {
+			width: 470px;
+			margin-right: 93px;
+		}
+		&__title {
+			margin-bottom: 40px;
+		}
+		&__text {
+			margin-bottom: 40px;
+			max-width: 584px;
+		}
+	}
+}

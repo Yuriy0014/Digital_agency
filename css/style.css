@@ -1125,3 +1125,20 @@ p {
     font-size: 18px;
   }
 }
+
+@media (min-width: 1440px) {
+  .team {
+    padding: 50px 0 110px;
+  }
+  .team__images {
+    width: 470px;
+    margin-right: 93px;
+  }
+  .team__title {
+    margin-bottom: 40px;
+  }
+  .team__text {
+    margin-bottom: 40px;
+    max-width: 584px;
+  }
+}
